@@ -47,6 +47,7 @@ namespace Exemplos
                 if( mult != 0 ) 
                 {
                     Console.Write(mult + " ");
+                    Console.WriteLine("oi");
                 }
             }
         }
