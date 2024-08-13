@@ -16,5 +16,14 @@ namespace AulasPOO.uteis
         {
             return num1 * num2;
         }
+        public static int Fatorial(int num1)
+        {
+            if (num1 == 1)
+            {
+                return 1;
+            }
+            else
+                return num1 * Fatorial(num1 - 1);
+        }
     }
 }

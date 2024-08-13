@@ -26,6 +26,11 @@ do
             LerDoisNumerosInteiros();
             Console.WriteLine($"O resultado da multiplicação de {num1} por {num2} é {Calculadora.Multiplica(num1, num2)}");
             break;
+        case 3:
+            Console.WriteLine("Informe o valor desejado: ");
+            int numero = int.Parse(Console.ReadLine());
+            Console.WriteLine($"O fatorial de {numero} é {Calculadora.Fatorial(numero)}");
+            break;
         default:
             Console.WriteLine("Opção Inválida");
             break;
