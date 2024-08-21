@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AulasPOO.uteis
 {
@@ -25,5 +26,11 @@ namespace AulasPOO.uteis
             else
                 return num1 * Fatorial(num1 - 1);
         }
+
+        public static float IMC(float peso, float altura)
+        {
+            return  peso / (altura * altura);
+        }
+
     }
 }

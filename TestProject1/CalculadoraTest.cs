@@ -47,7 +47,7 @@ namespace TestProject1
             float altura = 1.8f;
             float imc;
             imc = Calculadora.IMC(peso, altura);
-            Assert.AreEqual(27.00, imc);
+            Assert.AreEqual(27.01, Math.Round(imc, 2));
         }
     }
 }
