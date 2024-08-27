@@ -49,5 +49,15 @@ namespace TestProject1
             imc = Calculadora.IMC(peso, altura);
             Assert.AreEqual(27.01, Math.Round(imc, 2));
         }
+
+        [TestMethod]
+        public void Sorteador()
+        {
+            var lista = new List<string> { "Marcelo", "Vitória", "Caio" };
+            var rand = new Random();
+            var nextRandString = rand.Next(0, lista.Count);
+            var randString = lista[nextRandString];
+            Assert.IsInstanceOfType(randString, typeof(string));
+        }
     }
 }

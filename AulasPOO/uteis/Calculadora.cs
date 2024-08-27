@@ -31,6 +31,17 @@ namespace AulasPOO.uteis
         {
             return  peso / (altura * altura);
         }
+        public static void Sorteador(List<string> lista, List<string> listaNova)
+        {
+            if (lista != null)
+            {
+                var rand = new Random();
+                var nextRandString = rand.Next(0, lista.Count);
+                var randString = lista[nextRandString];
+                listaNova.Add(randString);
+                lista.Remove(randString);
+            }
+        }
 
     }
 }
